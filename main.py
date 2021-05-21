@@ -6,8 +6,8 @@ import src.GRU_late_fusion_game as LF_GRU_game
 
 def main():
     # NOTE: Weight and Bias project name and your entitiy loggin name.
-    PROJECT = 'Affective_Recognition'
-    ENTITIY = 'iliancorneliussen'
+    PROJECT = 'context-based_affective_state_recognition'
+    ENTITIY = 'iliancorneliussen' # <- need to be changed to your personal ID.
 
     # NOTE: Uncomment the model that you would like to train.
     # face.main(project=PROJECT, entity=ENTITIY)
