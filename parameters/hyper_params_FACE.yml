@@ -1,0 +1,9 @@
+num_epochs: 200       # 100 : from GRU papper
+batch_size: 1000        # 32 : from GRU papper
+learning_rate: 5e-4    # 1e-4 : from GRU papper
+hidden_size: 128       # 128 : from GRU papper
+num_layers: 2          # 2 : from GRU papper
+weight_decay: 5e-5
+normalize: "MinMax"    # OPTIONS: "MinMax", "Standard", or "None"
+amsgrad: False
+opensmile_window: "10"

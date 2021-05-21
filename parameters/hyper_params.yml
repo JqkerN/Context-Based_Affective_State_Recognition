@@ -1,0 +1,15 @@
+num_epochs: 100       # 100 : from GRU papper
+batch_size: 1000        # 32 : from GRU papper
+learning_rate: 1e-3    # 1e-4 : from GRU papper
+hidden_size: 128       # 128 : from GRU papper
+num_layers: 2          # 2 : from GRU papper
+weight_decay: 1e-3
+normalize: "MinMax"    # OPTIONS: "MinMax", "Standard", or "None"
+amsgrad: False
+opensmile_window: "10"
+model_face: "twilight-sweep-10.pth"
+model_pose: "ancient-sweep-10.pth"
+model_smile: "vivid-wood-769.pth"
+model_game: "ruby-dawn-833.pth"
+model_GRU: "rich-sweep-68.pth"
+model_GRU_game: "swept-sweep-16.pth"

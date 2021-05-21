@@ -1,0 +1,153 @@
+SVM:
+    Hyper_parameters:
+        C: 0.5
+        kernel: 'linear'
+        gamma: 'scale'
+        tol: 1e-4
+        class_weight: 'balanced'
+        verbose: True
+        decision_function_shape: 'ovo'
+
+Dataset:
+    Settings:
+        Number_of_classes: 6    # Options: 6 or 4       - has to be of type int()
+        opensmile_window: "2"   # Options: 1,2,5,10,50  - has to be of type str()
+
+    Path:
+        # dataset load path @
+        load:       "dataset/csv/"
+
+    Labels:
+        target:
+            - "Label"
+        game:
+            - "TurnTime"       
+            - "WhosTurn"
+            - "DiceValue"
+            - "Human"
+            - "Furhat"
+            - "ifSnake"
+            - "ifLadder"
+        openface:
+            - " x_48"
+            - " x_49"
+            - " x_50"
+            - " x_51"
+            - " x_52"
+            - " x_53"
+            - " x_54"
+            - " x_55"
+            - " x_56"
+            - " x_57"
+            - " x_58"
+            - " x_59"
+            - " x_60"
+            - " x_61"
+            - " x_62"
+            - " x_63"
+            - " x_64"
+            - " x_65"
+            - " x_66"
+            - " x_67"
+        
+            - " y_48"
+            - " y_49"
+            - " y_50"
+            - " y_51"
+            - " y_52"
+            - " y_53"
+            - " y_54"
+            - " y_55"
+            - " y_56"
+            - " y_57"
+            - " y_58"
+            - " y_59"
+            - " y_60"
+            - " y_61"
+            - " y_62"
+            - " y_63"
+            - " y_64"
+            - " y_65"
+            - " y_66"
+            - " y_67"
+            
+
+            - " p_scale"
+            - " p_rx"
+            - " p_ry"
+            - " p_rz"
+            - " p_tx"
+            - " p_ty"
+
+            - " AU01_c"
+            - " AU02_c"
+            - " AU04_c"
+            - " AU05_c"
+            - " AU06_c"
+            - " AU07_c"
+            - " AU09_c"
+            - " AU10_c"
+            - " AU12_c"
+            - " AU14_c"
+            - " AU15_c"
+            - " AU17_c"
+            - " AU20_c"
+            - " AU23_c"
+            - " AU25_c"
+            - " AU26_c"
+            - " AU28_c"
+            - " AU45_c"
+                    
+        openpose:   
+            - "Nose_x"
+            - "Nose_y"
+            - "Nose_z"
+
+            - "Neck_x"
+            - "Neck_y"
+            - "Neck_z"
+
+            - "RShoulder_x"
+            - "RShoulder_y"
+            - "RShoulder_z"
+
+            - "RElbow_x"
+            - "RElbow_y"
+            - "RElbow_z"
+
+            - "RWrist_x"
+            - "RWrist_y"
+            - "RWrist_z"
+
+            - "LShoulder_x"
+            - "LShoulder_y"
+            - "LShoulder_z"
+
+            - "LElbow_x"
+            - "LElbow_y"
+            - "LElbow_z"
+
+            - "LWrist_x"
+            - "LWrist_y"
+            - "LWrist_z"
+
+            - "REye_x"
+            - "REye_y"
+            - "REye_z"
+
+            - "LEye_x"
+            - "LEye_y"
+            - "LEye_z"
+
+            - "REar_x"
+            - "REar_y"
+            - "REar_z"
+
+            - "LEar_x"
+            - "LEar_y"
+            - "LEar_z" 
+
+        opensmile:
+            - "F0final_sma"
+            - "voicingFinalUnclipped_sma"
+            - "pcm_loudness_sma"
